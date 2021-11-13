@@ -55,16 +55,6 @@ const questions = [
     },
 ];
 
-const readmeSections = [
-    "Description",
-    "Installation",
-    "Usage",
-    "Contributing",
-    "Tests",
-    "License",
-    "Questions"
-];
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
