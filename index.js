@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
     var genReadme = genMarkdown.generateMarkdown(data);
 
     fs.writeFile(
-        `./dist/${fileName}README.html`,
+        `./dist/README.md`,
         `${genReadme}`,
         (err) => err ? console.error(err) : console.log("README Exported to ./dist")
     );
@@ -71,13 +71,6 @@ function init() {
     inquirer.prompt(questions)
         .then((input)=>{
             writeToFile(input.title, input)
-        })
-        .catch((error)=>{
-            if(error.isTtyError){
-                console.log("Error ", error)
-            }else{
-                console.log("Unkown Error ", error)
-            }
         })
 }
 
