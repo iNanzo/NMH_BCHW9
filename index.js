@@ -57,56 +57,28 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    var license = genMarkdown(data);
-    
-    var genReadme = `# ${fileName}
-    ${license.badge}
-    ${data.description}
-    ## Table of Contents
-    1. [Features](#features)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [Tests](#tests)
-    5. [Credits](#credits)
-    6. [License](#license)
-    7. [How to Contribute](#how_to_contribute)
-    ## Features
-    ${data.features}
-    ## Installation
-    ${data.installation}
-    ## Usage
-    ${data.usage}
-    ## Tests
-    ${data.tests}
-    ## Credits
-    ${data.credits}
-    ## License
-    ${data.license}
-    ## How to Contribute
-    ${data.contribution}
-    # End
-    `
+    var genReadme = genMarkdown.generateMarkdown(data);
 
     fs.writeFile(
         `./dist/${fileName}README.html`,
         `${genReadme}`,
         (err) => err ? console.error(err) : console.log("README Exported to ./dist")
     );
-    }
+}
 
-    // TODO: Create a function to initialize app
-    function init() {
-        inquirer.prompt(questions)
-            .then((input)=>{
-                writeToFile(input.title, input)
-            })
-            .catch((error)=>{
-                if(error.isTtyError){
-                    console.log("Error ", error)
-                }else{
-                    console.log("Unkown Error ", error)
-                }
-            })
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+        .then((input)=>{
+            writeToFile(input.title, input)
+        })
+        .catch((error)=>{
+            if(error.isTtyError){
+                console.log("Error ", error)
+            }else{
+                console.log("Unkown Error ", error)
+            }
+        })
 }
 
 // Function call to initialize app
