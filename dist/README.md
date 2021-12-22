@@ -1,27 +1,27 @@
 # undefined
-  undefined
-  213
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Table of Contents
-  1. [Features](#features)
+  1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
-  4. [Tests](#tests)
-  5. [Credits](#credits)
-  6. [License](#license)
-  7. [How to Contribute](#how_to_contribute)
-  ## Features
-  undefined
+  4. [License](#license)
+  5. [Contributing](#contributing)
+  6. [Tests](#tests)
+
+  ## Description
+  README file generator
   ## Installation
-  123
+  node index.js in terminal
   ## Usage
-  123
-  ## Tests
-  123
-  ## Credits
-  undefined
+  N/A
   ## License
-  undefined
-  ## How to Contribute
-  123
-  # End
+  Licensed under [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
+  ## Contributing
+  N/A
+  ## Tests
+  N/A
+  ## Questions
+  For further questions, contact me at
+  GitHub: [iNanzo](https://github.com/iNanzo)
+  E-Mail: newtonhoang99@gmail.com
   

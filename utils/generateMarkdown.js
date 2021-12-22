@@ -58,38 +58,38 @@ function renderLicenseSection(license) {
   if(license === ""){
     return "";
   }else{
-    return `Licensed under [${license}](${renderLicenseLink(data.license)}).`;
+    return `Licensed under [${license}](${renderLicenseLink(license)}).`;
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  var genReadme = `# ${data.file}
-  ${renderLicenseBadge.license}
-  ${data.description}
+  var genReadme = `# ${data.title}
+  ${renderLicenseBadge(data.license)}
   ## Table of Contents
-  1. [Features](#features)
+  1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
-  4. [Tests](#tests)
-  5. [Credits](#credits)
-  6. [License](#license)
-  7. [How to Contribute](#how_to_contribute)
-  ## Features
-  ${data.features}
+  4. [License](#license)
+  5. [Contributing](#contributing)
+  6. [Tests](#tests)
+
+  ## Description
+  ${data.description}
   ## Installation
   ${data.installation}
   ## Usage
   ${data.usage}
+  ## License
+  ${renderLicenseSection(data.license)}
+  ## Contributing
+  ${data.contribution}
   ## Tests
   ${data.tests}
-  ## Credits
-  ${data.credits}
-  ## License
-  ${renderLicenseSection.license}
-  ## How to Contribute
-  ${data.contribution}
-  # End
+  ## Questions
+  For further questions, contact me at\
+  GitHub: [${data.github}](https://github.com/${data.github})\
+  E-Mail: ${data.email}
   `;
 
   return genReadme;
