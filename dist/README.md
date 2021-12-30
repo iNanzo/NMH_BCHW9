@@ -1,4 +1,4 @@
-# undefined
+# Example Project
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Table of Contents
   1. [Description](#description)
@@ -9,19 +9,17 @@
   6. [Tests](#tests)
 
   ## Description
-  README file generator
+  An example README project
   ## Installation
-  node index.js in terminal
+  Use node index to run after installing any missing npm packages
   ## Usage
   N/A
   ## License
   Licensed under [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
   ## Contributing
-  N/A
+  Contribute to iNanzo on GitHub
   ## Tests
   N/A
   ## Questions
-  For further questions, contact me at
-  GitHub: [iNanzo](https://github.com/iNanzo)
-  E-Mail: newtonhoang99@gmail.com
+  For further questions, contact me at  GitHub: [iNanzo](https://github.com/iNanzo)  E-Mail: newtonhoang99@gmail.com
   
